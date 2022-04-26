@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom'
 function ResultSearchCars() {
     const [cobaGet, setCobaGet] = useState([])
 
-    // const url = 'https://rent-cars-api.herokuapp.com/customer/car'
-    const url = 'https://jsonplaceholder.typicode.com/posts'
+    const url = 'https://rent-cars-api.herokuapp.com/customer/car'
+    // const url = 'https://jsonplaceholder.typicode.com/posts'
 
     useEffect(() => {
         axios.get(url)
             .then((response) => {
                 setCobaGet(response.data)
-                console.log(response.data)
+                // console.log(cobaGet)
             })
             .catch((error) => {
                 console.log(error)
@@ -31,10 +31,10 @@ function ResultSearchCars() {
                                 <li key={result.id} >
                                     <Link style={{textDecoration:'none'}} to={'detail/' + result.id}>
                                         <div className={styles.carsResult}>
-                                            {/* {result.name}
+                                            {result.name}
                                             <img className={styles.carImage} src={result.image} alt="" />
-                                            {result.category} */}
-                                            {result.title}
+                                            {result.category}
+                                            {/* {result.title} */}
                                         </div>
                                     </Link>
                                 </li>
