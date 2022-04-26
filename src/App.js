@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import SearchCars from './components/SearchCars';
+import ResultSearchCars from './components/ResultSearchCars';
+import DetailCars from './components/DetailCars';
+import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path='/' element={<SearchCars />}>
+          <Route index element={<ResultSearchCars />}/>
+          <Route path='detail/:id' element={<DetailCars />}/>
+          <Route path='*' element={<div>page tidak ada</div>}/>
+        </Route>
+      </Routes>
     </div>
   );
 }
