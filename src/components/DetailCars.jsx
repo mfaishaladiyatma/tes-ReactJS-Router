@@ -9,7 +9,8 @@ function DetailCars() {
   const [show, setShow] =useState(false)
   
   const params = useParams()
-  const url = `https://rent-cars-api.herokuapp.com/customer/car/${params.id}`
+  // const url = `https://rent-cars-api.herokuapp.com/customer/car/${params.id}`
+  const url = `https://rent-cars-api.herokuapp.com/admin/car/${params.id}`
   // const url = `https://jsonplaceholder.typicode.com/posts/${params.id}`
 
 

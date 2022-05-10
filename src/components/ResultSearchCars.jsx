@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 function ResultSearchCars() {
     const [cobaGet, setCobaGet] = useState([])
 
-    const url = 'https://rent-cars-api.herokuapp.com/customer/car'
+    // const url = 'https://rent-cars-api.herokuapp.com/customer/car'
+    const url = 'https://rent-cars-api.herokuapp.com/admin/car'
     // const url = 'https://jsonplaceholder.typicode.com/posts'
 
     useEffect(() => {
@@ -23,7 +24,7 @@ function ResultSearchCars() {
     return (
         <>
             <div className='ResultSearchCars'>
-                <h1>ResultSearchCars</h1>
+                <h1 className='flex justify-center text-7xl font-bold'>ResultSearchCars</h1>
                 <div className='resultGet'>
                     <div className='result-container'>
                         <ol>
