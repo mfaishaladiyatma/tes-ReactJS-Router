@@ -10,7 +10,8 @@ module.exports = {
       spacing: {
         '13': '3.25rem',
         '21': '5.5rem',
-        '16px': '16px'
+        '16px': '16px',
+        '7rem': '7rem'
       },
       colors: {
         'nyoba-blue': '#1fb6ff',
@@ -20,6 +21,7 @@ module.exports = {
       },
       width: {
         'screen-1/2': '50vw',
+        'screen-3/4': '75vw',
         'screen-1/4': '25vw',
         'screen-45vw': '45vw',
         '1000px': '1000px',
@@ -29,6 +31,7 @@ module.exports = {
       height: {
         'screen-1/2': '50vh',
         'screen-3/4': '75vh',
+        'screen-60vh': '60vh',
         '90%': '90%',
         '100px': '100px'
       },

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import styles from './css/ResultSearchCars.module.css'
+// import styles from './css/ResultSearchCars.module.css'
 import { Link } from 'react-router-dom'
 
 function ResultSearchCars() {
@@ -31,9 +31,9 @@ function ResultSearchCars() {
                             {cobaGet.map((result) => (
                                 <li key={result.id} >
                                     <Link style={{textDecoration:'none'}} to={'detail/' + result.id}>
-                                        <div className={styles.carsResult}>
+                                        <div className='flex flex-col'>
                                             {result.name}
-                                            <img className={styles.carImage} src={result.image} alt="" />
+                                            <img className='' src={result.image} alt="" />
                                             {result.category}
                                             {/* {result.title} */}
                                         </div>
