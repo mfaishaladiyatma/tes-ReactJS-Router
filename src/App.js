@@ -17,10 +17,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<SearchHomePage />}/>
-          <Route path='result' element={<ResultSearchCars />}/>
+          <Route path='result'>
+            <Route index element={<ResultSearchCars />}/>
+            <Route path='detail/:id' element={<DetailCars />}/>
+          </Route>
           <Route path='login' element={<LoginPage />}/>
           <Route path='register' element={<RegisterPage />}/>
-          <Route path='detail/:id' element={<DetailCars />}/>
           <Route element={<ProtectedRoute />}>
             <Route path='profile' element={<Profile />} />
           </Route>

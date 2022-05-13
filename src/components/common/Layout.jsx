@@ -25,7 +25,7 @@ function Layout() {
               <li className='flex justify-center rounded-lg h-12 w-28 items-center shadow-custom-shadow-1'><div className='font-helvetica font-bold'>Login</div></li>
             </Link>
             <Link to={'/register'}>
-              <li className='flex justify-center bg-[#38d424] rounded-lg h-12 w-28 items-center shadow-custom-shadow-1'><div className='font-helvetica text-white font-bold'>Register</div></li>
+              <li className='flex justify-center bg-[#5CB85F] rounded-lg h-12 w-28 items-center shadow-custom-shadow-1'><div className='font-helvetica text-white font-bold'>Register</div></li>
             </Link>
           </ol>
         </nav>
