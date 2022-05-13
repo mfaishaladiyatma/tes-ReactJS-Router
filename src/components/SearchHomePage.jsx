@@ -36,7 +36,7 @@ function SearchHomePage() {
                             </div>
 
                             <Link to={'/result'}>
-                                <button className='flex justify-center bg-[#38d424] rounded-lg h-12 w-28 items-center shadow-custom-shadow-1'><div className='font-helvetica text-white font-bold'>Cari Mobil</div></button>
+                                <button className='flex justify-center bg-[#5CB85F] rounded-lg h-12 w-28 items-center shadow-custom-shadow-1'><div className='font-helvetica text-white font-bold'>Cari Mobil</div></button>
                             </Link>
                             {/* <Listbox.Label className="block text-sm font-medium text-gray-700">Assigned to</Listbox.Label> */}
                         </form>

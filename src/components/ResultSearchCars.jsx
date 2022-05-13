@@ -27,8 +27,8 @@ function ResultSearchCars() {
     return (
         <>
             <div className='ResultSearchCars flex flex-col items-center'>
-                <div className='resultGet flex justify-center w-full bg-whitesmoke  h-screen-1/4'>
-                    <div className="bg-white shadow-custom-shadow-searchBar rounded-10px flex items-center justify-center flex-col pencarianBars gap-y-7 w-80rem h-52">
+                <div className='resultGet flex justify-center w-full relative bg-whitesmoke  h-screen-1/4'>
+                    <div className="absolute -bottom-20 bg-white shadow-custom-shadow-searchBar rounded-10px flex items-center justify-center flex-col pencarianBars gap-y-7 w-80rem h-52">
                         <div className='w-full'><p className='w-fit ml-14 font-helvetica font-bold text-lg'>Pencarianmu</p></div>
                         <form className='form-helvetica flex flex-row items-center gap-x-8' action="">
                             <div className='font-rubik flex flex-col gap-y-4'>
@@ -56,7 +56,7 @@ function ResultSearchCars() {
                     </div>
                 </div>
                 <div className='result-container  w-80rem mt-32'>
-                    <ol className='grid grid-cols-3 gap-10'>
+                    <ol className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10'>
                         {cobaGet.map((result) => (
                             <li className='shadow-custom-shadow-1  rounded-10px z-10 h-screen-90vh' key={result.id}>
                                 <div className='flex p-5 h-full'>

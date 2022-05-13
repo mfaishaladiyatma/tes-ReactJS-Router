@@ -37,10 +37,11 @@ module.exports = {
         '60px': '60px'
       },
       maxWidth: {
-        '268px': '268px'
+        '268px': '268px',
+        '80rem': '80rem',
       },
       maxHeight: {
-        '290px': '290px'
+        '290px': '290px',
       },
       borderRadius: {
         '60px': '60px', 
