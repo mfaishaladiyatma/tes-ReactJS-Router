@@ -1,3 +1,5 @@
+const { resolvePath } = require("react-router-dom");
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -14,7 +16,8 @@ module.exports = {
         'nyoba-blue': '#1fb6ff', //untuk colors bg ataupun borderColor atau text color
         'whitesmoke': '#F1F3FF',
         'background-blue-car': '#0D28A6',
-        'border-gray': '#D0D0D0'
+        'border-gray': '#D0D0D0',
+        'gray': '#8A8A8A'
       },
       width: {
         'screen-1/2': '50vw',
@@ -32,13 +35,17 @@ module.exports = {
         'screen-3/4': '75vh',
         'screen-90vh': '90vh',
         'screen-60vh': '60vh',
+        'screen-150vh': '150vh',
         '90%': '90%',
         '100px': '100px',
-        '60px': '60px'
+        '60px': '60px',
+        '780px': '780px'
       },
       maxWidth: {
         '268px': '268px',
         '80rem': '80rem',
+        '60rem': '60rem',
+        '90%': '90%',
       },
       maxHeight: {
         '290px': '290px',
@@ -65,6 +72,9 @@ module.exports = {
       },
       inset: {
         '7rem': '7rem',//biasanya khusus untuk top, left,right
+      },
+      gridTemplateColumns:{
+        'custom-3': '1fr 150px 1fr'
       }
     },
   },

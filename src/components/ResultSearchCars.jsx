@@ -58,7 +58,7 @@ function ResultSearchCars() {
                 <div className='result-container  w-80rem mt-32'>
                     <ol className='grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-10'>
                         {cobaGet.map((result) => (
-                            <li className='shadow-custom-shadow-1  rounded-10px z-10 h-screen-90vh' key={result.id}>
+                            <li className='shadow-custom-shadow-1 flex rounded-10px z-10 h-screen-90vh' key={result.id}>
                                 <div className='flex p-5 h-full'>
                                     <div className="wrapper-card flex flex-col gap-y-5 relative">
                                         <img className='max-h-290px' src={result.image} alt="" />
