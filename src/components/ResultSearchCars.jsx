@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-// import styles from './css/ResultSearchCars.module.css'
 import { Link } from 'react-router-dom'
 import calendarLogo from '../images/fi_calendar.svg'
 import transmisiLogo from '../images/fi_settings.svg'
