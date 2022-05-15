@@ -76,25 +76,41 @@ const RegisterPage = () => {
   return (
 
       <>
-    <h1>RegisterPage</h1>
-    <form>
+
+    <div className=' shadow-custom-shadow-1 rounded-10px p-20 m-10'>
+    <form className='flex flex-col items-center font-helvetica w-full'>
+
+        <div className=' flex flex-col items-stretch w-96 gap-y-3'>
+
+        <div className='flex flex-row justify-between'>
         <label htmlFor="first_name">First Name</label>
-        <input className='border-solid border-2 border-sky-500' id='first_name' type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
+        <input className='border-solid border-2 border-gray' id='first_name' type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)}/>
+        </div>
 
+        <div className='flex flex-row justify-between'>
         <label htmlFor="last_name">Last Name</label>
-        <input className='border-solid border-2 border-sky-500' id='last_name' type="text" value={lastName} onChange={(e) => setLastName(e.target.value)}/>
+        <input className='border-solid border-2 border-gray' id='last_name' type="text" value={lastName} onChange={(e) => setLastName(e.target.value)}/>
+        </div>
 
+        <div className='flex flex-row justify-between'>
         <label htmlFor="email">Email</label>
-        <input className='border-solid border-2 border-sky-500' id='email' type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
+        <input className='border-solid border-2 border-gray' id='email' type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
+        </div>
 
+        <div className='flex flex-row justify-between'>
         <label htmlFor="password">Password</label>
-        <input className='border-solid border-2 border-sky-500' id='password' type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        <input className='border-solid border-2 border-gray' id='password' type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        </div>
 
+        <div className='flex flex-row justify-between'>
         <label htmlFor="password_confirmation">Password Confirmation</label>
-        <input className='border-solid border-2 border-sky-500' id='password_confirmation' type="password" value={passwordConfirmation} onChange={(e) => setPasswordConfirmation(e.target.value)}/>
+        <input className='border-solid border-2 border-gray' id='password_confirmation' type="password" value={passwordConfirmation} onChange={(e) => setPasswordConfirmation(e.target.value)}/>
+        </div>
 
-        <button onClick={tryPost}>Register</button>
+        <button className='bg-[#5CB85F] p-3 text-white rounded-10px' onClick={tryPost}>Register</button>
+        </div>
     </form>
+    </div>
     </>
   )
 }

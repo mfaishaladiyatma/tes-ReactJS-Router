@@ -1,3 +1,9 @@
+# Alur dari Layoutnya
+
+- Tekan Cari Mobil untuk pindah ke result page
+- Kemudian tekan tombol Pilih Mobil
+- Sampai pada page terakhir
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

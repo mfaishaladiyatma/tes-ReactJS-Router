@@ -48,8 +48,11 @@ function DetailCars() {
   return (
     <>
       <div className='resultGet flex justify-center w-full relative bg-whitesmoke  h-screen-1/4'>
+
         <div className="absolute -bottom-20 bg-white shadow-custom-shadow-searchBar rounded-10px flex items-center justify-center flex-col pencarianBars gap-y-7 w-80rem h-52">
+
           <div className='w-full'><p className='w-fit ml-14 font-helvetica font-bold text-lg'>Pencarianmu</p></div>
+
           <form className='form-helvetica flex flex-row items-center gap-x-8' action="">
             <div className='font-rubik flex flex-col gap-y-4'>
               <label htmlFor="tipeDriver">Tipe Driver</label>
@@ -73,8 +76,10 @@ function DetailCars() {
             </Link>
             {/* <Listbox.Label className="block text-sm font-medium text-gray-700">Assigned to</Listbox.Label> */}
           </form>
+
         </div>
       </div>
+
       <div className="wrapper-detail-cars mt-32 grid grid-cols-custom-3 grid-rows-2  px-32 gap-x-10 justify-items-stretch h-screen-150vh">
         <div className='p-5 flex tentang-paket col-span-2 row-span-2  h-fit rounded-10px shadow-custom-shadow-1'>
           <div className='flex flex-col gap-y-5 font-helvetica w-full'>
@@ -163,9 +168,12 @@ function DetailCars() {
                 <li>Jika overtime lebih dari 12 jam akan ada tambahan biaya Rp 20.000/jam</li>
                 <li>Tidak termasuk akomodasi penginapan</li>
               </ul>
+
             </Transition>
+
           </div>
         </div>
+
         <div className='flex shadow-custom-shadow-1 rounded-10px p-5 h-fit'>
           {getDataById.map((result) => (
             <div key={result.id}>
@@ -197,6 +205,7 @@ function DetailCars() {
           ))}
           {isFetching && <div> Tunggu</div>}
         </div>
+        
       </div>
     </>
   )

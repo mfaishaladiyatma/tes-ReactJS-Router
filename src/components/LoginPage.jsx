@@ -31,17 +31,22 @@ const LoginPage =() => {
 
   return (
       <>
-    <h1>LoginPage</h1>
-    <form>
+    <div className=' rounded-10px shadow-custom-shadow-1 p-20 m-10'>
+    <form className='font-helvetica flex flex-col items-center justify-center gap-y-5'>
 
+        <div className='flex flex-row gap-x-10'>
         <label htmlFor="email">Email</label>
-        <input className='border-solid border-2 border-sky-500' id='email' type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
+        <input placeholder='Masukkan Email anda' className='w-52 px-2 border-solid border-2 border-gray' id='email' type="text" value={email} onChange={(e) => setEmail(e.target.value)}/>
+        </div>
 
+        <div className='flex flex-row gap-x-3'>
         <label htmlFor="password">Password</label>
-        <input className='border-solid border-2 border-sky-500' id='password' type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        <input placeholder='Masukkan password anda' className='w-52 px-2 border-solid border-2 border-gray' id='password' type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+        </div>
 
-        <button onClick={tryLogin}>Login</button>
+        <button className='bg-[#5CB85F] text-white w-40 h-10 rounded-10px font-helvetica' onClick={tryLogin}>Login</button>
     </form>
+    </div>
     </>
   )
 }
